@@ -11,4 +11,4 @@ def napari_experimental_provide_dock_widget():
 
 @napari_hook_implementation
 def napari_experimental_provide_function_widget():
-    return my_function
+    return my_function, {'call_button':'Invert!'}
