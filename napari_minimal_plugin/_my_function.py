@@ -1,6 +1,6 @@
-from napari.types import ImageData
+from napari.types import ImageData, LayerDataTuple
 
-def my_function(image : ImageData) -> 'napari.types.LayerDataTuple':
+def my_function(image : ImageData) -> LayerDataTuple:
 
     # process the image
     result = -image
