@@ -10,5 +10,5 @@ def napari_experimental_provide_dock_widget():
     return MyWidget
 
 @napari_hook_implementation
-def napari_experimental_function_dock_widget():
+def napari_experimental_provide_function_widget():
     return my_function
