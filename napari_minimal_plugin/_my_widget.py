@@ -6,18 +6,14 @@ class MyWidget(QWidget):
         super().__init__()
 
         # initialize layout
-        self.layout = QGridLayout()
+        layout = QGridLayout()
 
-        # text
+        # add a button
         btn = QPushButton('Click me!', self)
-
         def trigger():
-            print("Hello world!\nnapari has ", len(napari_viewer.layers), " layers")
-
-        # action
+            print("napari has", len(napari_viewer.layers), "layers")
         btn.clicked.connect(trigger)
-
-        self.layout.addWidget(btn)
+        layout.addWidget(btn)
 
         # activate layout
-        self.setLayout(self.layout)
+        self.setLayout(layout)
